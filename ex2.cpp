@@ -4,8 +4,7 @@
 class Cercle {
 private:
     double rayon;
-    double x, y; // Coordonnées du centre
-
+    double x, y; 
 public:
     Cercle(double r, double cx, double cy) : rayon(r), x(cx), y(cy) {}
 
@@ -34,7 +33,7 @@ public:
 
 int main() {
     Cercle c1(1.0, 10.0, 10.0);
-    c1.affiche(); // Affiche : Cercle de rayon 1 centré en (10, 10)
+    c1.affiche(); 
 
     std::cout << "Périmètre : " << c1.perimetre() << std::endl;
     std::cout << "Surface : " << c1.surface() << std::endl;
@@ -44,7 +43,7 @@ int main() {
     std::cout << "Surface après changement de rayon : " << c1.surface() << std::endl;
 
     c1.translate(-10.0, -10.0);
-    c1.affiche(); // Affiche : Cercle de rayon 2 centré en (0, 0)
+    c1.affiche(); 
 
     std::cout << "Le point (1, 1) appartient-il au cercle ? " << (c1.appartient(1.0, 1.0) ? "Oui" : "Non") << std::endl;
     std::cout << "Le point (3, 3) appartient-il au cercle ? " << (c1.appartient(3.0, 3.0) ? "Oui" : "Non") << std::endl;
